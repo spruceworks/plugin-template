@@ -45,6 +45,18 @@ worlds) is disposable and gitignored.
 6. `TemplatePlugin.BSTATS_SERVICE_ID` — register the plugin at
    [bstats.org](https://bstats.org) and set the real id.
 7. Reset this README and `CHANGELOG.md`.
+8. **Before your first commit in the new repo:**
+   `git update-index --chmod=+x gradlew`, then verify with
+   `git ls-files -s gradlew` (must read `100755`, not `100644`). Copying
+   files out of this template on Windows (`cp`, not `git clone`) does not
+   preserve the executable bit, and a `100644` gradlew fails CI with
+   `Permission denied` (exit 126) — fast (~10s) and easy to misread as some
+   other problem. `.gitattributes` cannot fix this — it doesn't control file
+   mode, only text/eol/diff behavior — so this has to be a manual step every
+   time. `.github/workflows/build.yml`'s own `chmod +x gradlew` step is a
+   second line of defense in CI regardless, but don't rely on it being the
+   only one — a contributor's local `./gradlew` (macOS/Linux) hits the same
+   "Permission denied" if the committed mode is wrong.
 
 ## Release checklist
 
