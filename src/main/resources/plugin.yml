@@ -1,0 +1,12 @@
+name: PaperTemplate
+version: '${version}'
+main: dev.spruceworks.template.TemplatePlugin
+api-version: '26.2'
+description: Reusable Paper plugin template.
+authors: [SpruceWorks]
+website: https://github.com/spruceworks/plugin-template
+
+permissions:
+  papertemplate.admin:
+    description: Grants access to /papertemplate administration commands.
+    default: op

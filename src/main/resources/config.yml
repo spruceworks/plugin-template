@@ -1,0 +1,13 @@
+# ============================================================
+#  PaperTemplate - config.yml
+#
+#  Reload at runtime with /papertemplate reload
+#  (no server restart required).
+# ============================================================
+
+# Print extra diagnostic output to the console.
+debug: false
+
+# Anonymous usage statistics via bStats (https://bstats.org).
+# Set to false to opt out for this plugin only.
+metrics: true

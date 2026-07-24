@@ -1,0 +1,13 @@
+# ============================================================
+#  PaperTemplate - messages.yml
+#
+#  Every player-facing string lives here. Format: MiniMessage
+#  (https://docs.advntr.dev/minimessage/format.html).
+#  <prefix> is replaced with the value of 'prefix' below.
+#  Reload at runtime with /papertemplate reload.
+# ============================================================
+
+prefix: "<gradient:#7cb518:#38b000><bold>Template</bold></gradient> <dark_gray>»</dark_gray>"
+
+reload-success: "<prefix> <green>Configuration and messages reloaded.</green>"
+reload-failed: "<prefix> <red>Reload failed — check the console for details.</red>"
